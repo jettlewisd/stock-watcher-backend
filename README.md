@@ -108,8 +108,8 @@ IDE: IntelliJ IDEA
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/jettlewisd/devlink-backend.git
-cd devlink-backend
+git clone https://github.com/jettlewisd/stock-watcher-backend.git
+cd stock-watcher-backend
 ```
 
 2. **Set up PostgreSQL**
@@ -126,10 +126,10 @@ CREATE DATABASE devlink_db;
 Edit the `src/main/resources/application.properties` file to match your local PostgreSQL setup (use the values provided below):
 
 ```properties
-spring.application.name=DevLink
 
 # Database connection
-spring.datasource.url=jdbc:postgresql://localhost:5432/devlink_db
+spring.datasource.url=jdbc:postgresql://localhost:5432/stock_watcher_backend
+spring.datasource.name=stock_watcher_db
 spring.datasource.username=postgres
 spring.datasource.password=postgres1
 spring.datasource.driver-class-name=org.postgresql.Driver
@@ -140,7 +140,7 @@ spring.sql.init.mode=always
 
 4. **Populate the database**
 
-Use the provided SQL file (`schema.sql`, `data.sql`, or any included instructions) to create the tables and add sample data. If no file is included, you will need to add your own data manually. (Check the resources folder for SQL files).
+Use the provided SQL file (`stock_watcher.sql`) to create the tables and add sample data. If no file is included, you will need to add your own data manually. (Check the resources folder for SQL files).
 
 5. **Run the application**
 

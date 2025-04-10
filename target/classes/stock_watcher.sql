@@ -1,4 +1,4 @@
--- database m2_final_project
+-- database stock_watcher_db
  --rollback;
 BEGIN TRANSACTION;
 
