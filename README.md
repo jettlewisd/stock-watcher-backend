@@ -118,7 +118,7 @@ Make sure PostgreSQL is installed and running on your system.
 Then create a database for the project:
 
 ```sql
-CREATE DATABASE devlink_db;
+CREATE DATABASE stock_watcher_db;
 ```
 
 3. **Configure application properties**
@@ -128,7 +128,7 @@ Edit the `src/main/resources/application.properties` file to match your local Po
 ```properties
 
 # Database connection
-spring.datasource.url=jdbc:postgresql://localhost:5432/stock_watcher_backend
+spring.datasource.url=jdbc:postgresql://localhost:5432/stock_watcher_db
 spring.datasource.name=stock_watcher_db
 spring.datasource.username=postgres
 spring.datasource.password=postgres1
@@ -149,9 +149,6 @@ Using IntelliJ IDEA or from the terminal:
 ```bash
 ./mvnw spring-boot:run
 ```
-
-The backend will start at: [http://localhost:8080](http://localhost:8080)
-
 
 
 ---
