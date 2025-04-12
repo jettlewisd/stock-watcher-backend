@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS data_entry, symbol, exchange CASCADE;
 -- Create the tables and constraints
 -- *************************************************************************************************
 
---users (name is pluralized because 'user' is a SQL keyword)
+--users (name is pluralized because 'user' is a SQL keyword)`
 CREATE TABLE users (
 	user_id SERIAL,
 	username varchar(50) NOT NULL UNIQUE,

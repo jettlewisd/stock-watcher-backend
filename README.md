@@ -69,18 +69,28 @@ This application allows users to view market data (price action, price movement 
 - Update a symbol
 - Remove a symbol
 - Remove an exchange
+---
+
+## Login Credentials:
+
+- username: user 
+- password: ROLE_USER
+---
+- username: admin
+- password: ROLE_admin
+
 
 ---
 
 ## 🛠️ Tech Stack
 
-Language: Java
-Framework: Spring Boot
-Database: PostgreSQL
-Data Access: Spring JDBC with DAO pattern
-Testing: Postman
-Build Tool: Maven
-IDE: IntelliJ IDEA
+- Language: Java
+- Framework: Spring Boot
+- Database: PostgreSQL
+- Data Access: Spring JDBC with DAO pattern
+- Testing: Postman
+- Build Tool: Maven
+- IDE: IntelliJ IDEA
 
 ---
 
@@ -149,13 +159,6 @@ Using IntelliJ IDEA or from the terminal:
 ```bash
 ./mvnw spring-boot:run
 ```
-
-
----
-
-## ✅ Status
-
-🔧 In Development — API complete with all core features. Login features coming soon to tailor the user's experience.
 
 ---
 
